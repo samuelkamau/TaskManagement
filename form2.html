@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=width-device,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+	body,html{
+		height: 100%;
+	}
+	.parallax{
+		background-image: url('pics/depositphotos_102541432-stock-photo-blank-note-book-with-pencil.jpg');
+		opacity: 0.4;
+
+		height: 100%;
+
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+
+	@media only screen and (max-device-width: 1366px) {
+		.parallax {
+			background-attachment: scroll;
+
+		}
+	}
+	.header .border{
+		position: absolute;
+		z-index: 1000;
+		font-size: 50px;
+		font-family: Courier;
+		top:150px;
+		left: 150px;
+		font-weight: bold;
+	}
+	.border{
+		position: absolute;
+		z-index: 1000;
+		top: 120px;left: 60px;
+		width: 85%;
+		height: 800px;
+		margin-left: 80px;
+		background-color: white;
+		border-color: white;
+		border-radius: 10px;
+		border-color: #58FAF4;
+		box-sizing: border-box;
+		border-width: 2px;
+		box-shadow: 2px 2px 2px 2px #CEF6F5;
+
+	}
+	p{
+		font-size: 50px;
+		font-family: Courier;
+		font-weight: bold;
+		margin-left:250px;
+		color: #01A9DB;
+		text-decoration: underline;
+	}
+	
+	
+	.button {
+		width: 300px;
+		height: 50px;
+		border-radius: 40px;
+		background-color: white;
+		color: black;
+		border-color: #01A9DB;
+		font-size: 25px;
+		font-family: ;
+		font-weight: lighter;
+		margin-left: 500px;
+		
+		
+	}
+	.button:hover{
+		color: #FFFFFF;
+		background-color: #01A9DB;
+		border-color: #00FFFF;
+		box-shadow: 2px 2px 2px 2px #01A9DB;
+	}
+</style>
+</head>
+<body>
+	<div class="parallax"></div>
+	<div class="border">
+		<p>What can we do for you?</p>
+		<br>
+		<a href="shopping.html"><button class="button pulse" type="submit">shopping</button></a>
+		<br>
+		<br>
+		<br>
+		<a href="details.html"><button class="button">Delivery</button></a>
+		<br>
+		<br>
+		<br>
+		<a href="details.html"><button class="button">Moving and packing</button></a>
+		<br>
+		<br>
+		<br>
+		<a href="details.html"><button class="button">Handyman</button></a>
+		<br>
+		<br>
+		<br>
+		<a href="details.html"><button class="button">concierge</button></a>
+		<br>
+		<br>
+		<br>
+		<a href="details.html"><button class="button">Fundis</button></a>
+		<br>
+		<br>	
+	</div>
+	<br>
+	<br>
+	<br><br>
+	
+	
+
+	
+
+
+</body>
+</html>

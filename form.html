@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=width-device,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script language="javascript">
+		jquery(document).ready(fu)
+	</script>
+
+</head>
+<body>
+	<div class="container" style="background-color: #CEF6F5;padding-left: 20px; margin-top: 200px; padding-bottom: 20px;padding-top: 0; padding-left: 40px;">
+		
+	<form id="inputform">
+     
+     <fieldset><p  style="padding-top: 20px; font-size: 22px;"><u> What can we do for you?</u></p></fieldset>
+     <div class="row">
+     	<div class="col-md-4">
+     <label class="radioContainer">shopping
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label> 
+	<br>
+	 <label class="radioContainer">Delivery
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label>
+<br>
+ <label class="radioContainer">Moving and packing
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label>
+</div>
+<div class="col-md-2" style="background:#CEF6F5;;"></div>
+	<div class="col-md-4">
+ <label class="radioContainer">Handyman
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label>
+<br>
+ <label class="radioContainer">concierge
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label>
+<br>
+ <label class="radioContainer">Fundis
+        <input type="radio" name="choose">
+        <span class="circle"></span>
+</label>
+
+</div>
+<br><br>
+<center><button class="btn btn-success">Continue</button></center>
+</div>
+<br>
+
+    </form>
+   <script >
+   $(":radio").click(function(){
+   var radioName = $(this).attr("choose"); //Get radio name
+   $(":radio[name='choose"+radioName+"'choose]").attr("disabled", true); //Disable all with the same name
+});
+   </script>
+    </div>
+
+</body>
+</html>

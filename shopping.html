@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shopping</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	body{
+		background-color: rgba(0,0,0,0.02);
+	}
+	.border-box{
+		width: 800px;
+    background: rgba(0,0,0,0.5);
+    color: black;
+    margin-top: 50px;
+    margin-left: 350px;
+    align-self: center;
+    position: relative;
+    margin-top: 30px;
+    border: 0.5px solid #D8D8D8;
+    box-sizing: border-box;
+    background-color: white;
+    
+    align-content: center;
+    border-radius: 10px;
+    padding: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	}
+	.description-box{
+		width: 800px;
+		height: 320px;
+		margin-left: 350px;
+		background:rgba(0,0,0,0.5);
+		color:  black;
+		margin-top: 580px;
+		border: 0.5px solid #D8D8D8;
+		box-sizing: border-box;
+		background-color: white;
+		padding-left: 100px;
+		align-content: center;
+		border-radius: 10px;
+		padding-top:30px; 
+		box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	#textarea{
+		width: 600px;
+		height: 150px;
+		border: 1px solid #01A9DB;
+		color: black;
+		font-size: 20px;
+		font-family: Times New Roman;
+
+
+	}
+	.border-box input[type="text"],input[type="Email"]{
+		border: none;
+		border-bottom: 1.25px solid  #01A9DB;
+		background: transparent;
+		outline: none;
+		height: 20px;
+		width: 460px;
+		color: black;
+		font-size: 20px;
+		font-family: Times New Roman;
+		
+		padding-bottom: 5px;
+		
+
+	}
+	label.main{
+		font-size: 23px;
+		font-weight: normal;
+		font-family: Aileron;
+		color: #04B4AE;
+		
+
+	}
+	.select{
+		width: 170px;
+		border-width: 1.25px solid #01A9DB;
+		font-family: Times New Roman;
+		font-size: 16px;
+		
+		height: 20px;
+	}
+	label{
+		font-size: 18px;
+	}
+	.border-box input[type="number"]{
+		border: none;
+		border-bottom: 1.25px solid  #01A9DB;
+		background: transparent;
+		outline: none;
+		height: 20px;
+		width: 400px;
+		color: black;
+		font-size: 20px;
+		padding-bottom: 2px;
+		font-family: Times New Roman;
+		
+	}
+	.header{
+		margin-left: 430px; 
+		font-size: 40px;
+		margin-top: 40px;
+		font-weight: lighter;
+		font-family: Aileron;
+
+	}
+	p{
+		font-size: 18px;
+	}
+	.button{
+		width: 180px;
+		height: 40px;
+		align-content: center;
+		margin-left: 200px;
+		background-color: #01A9DB;
+		border-color: #01A9DB;
+		border-radius: 20px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+
+	}
+	
+	button:disabled,button[disabled]{
+		border: 1px solid #999999;
+		background-color: #FFF;
+		color:#01A9DB ;
+	}
+
+</style>
+</head>
+<script type="text/javascript" language="javascript">
+	 function checkform()
+    {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+        if (cansubmit) {
+            document.getElementById('submitbutton').disabled = false;
+
+        }
+    }
+    
+   
+</script>
+<body>
+	<div class="header">DESCRIBE YOUR TASK HERE</div>
+	<div class="border-box">
+		<form name="theform">
+			<label class="main">Enter your details here:</label>
+			<br>
+			<br>
+			
+			<p style="font-size: 18px;">Full name:</p>	
+			<input type="text" name="" placeholder="Enter your full name" onkeyup="checkform()">
+			<br>
+			<br>
+			<p>phone Number:</p>						
+			<select style="max-height: 20px;padding-left: 2px;"><option>+254</option></select>
+			<input type="number" name="" placeholder="7*******" onkeyup="checkform()" style="padding-left: 3px;">
+			<br>
+			<br>
+			<p>Email:</p>			
+			
+			<input type="email" name="" placeholder="enter your email" onkeyup="checkform()">
+			<br>
+			<br>
+			<p>Address:</p>
+			
+			
+			<input type="text" name="" placeholder="enter your address" onkeyup="checkform()">
+			<br>
+			<br>				
+			<p style="padding-right: 10px;">preferred stores:</p> <select class="select" required>
+				<option value="">Select preferred store:</option>
+				<option value="Tuskys">Tuskys</option>
+				<option value="Naivas">Naivas</option>
+				<option value="Nakumatt">Nakumatt</option>
+			</select>
+			<br>
+			<br>
+			<button class="button" type="sumbit" id="submitbutton" disabled="disabled" value="sumbit">Continue</button>
+
+		</form>
+	</div>
+	<br>
+	<br>
+	<!-- <div class="description-box">
+		<label class="main">Input your task description:</label>
+		<br>
+		<textarea name="comment" id="textarea"></textarea>
+		<br>
+		<br>
+		<button class="button" type="sumbit" id="submitbutton2" disabled="disabled" value="sumbit">Continue</button> -->
+
+
+
+	</div>
+	<br>
+	<br>
+
+
+	
+	
+	
+	
+
+</body>
+</html>
